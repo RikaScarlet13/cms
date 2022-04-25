@@ -1,0 +1,25 @@
+.dash-logo{
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px 50px;
+}
+.dash-logo img{
+    width: 100px;
+    padding: 0 15px 0 0;
+}
+/* .dash-logo .dash-brgy-place{
+
+} */
+.section-dash{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin: 0 0 0 30px;
+}
+.section-dash .sec-one-dash h2{
+    background-color: aqua;
+}
+.section-dash .sec-two-dash .record-summary-dash{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

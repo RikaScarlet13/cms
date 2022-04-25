@@ -1,0 +1,53 @@
+
+.section button{
+    float: right;
+}
+.wrapper .side-bar .menu .item .sub-menu{
+    display: block;
+}
+.dash-menu{
+    background-color: #263238;
+    padding: 20px 10px 3px 15px;
+}
+.dash-menu .dash-sec{
+    display: flex;
+    /* flex-direction: row; */
+    }
+.dash-menu .dash-sec .dash-input{
+    display: flex;
+    padding: 0 0 0 10px;
+}
+.dash-menu .dash-sec .dash-input h4, p{
+    color: white;
+}
+.dash-menu .dash-sec .type-incident-dash{
+    padding: 0 0 0 180px;
+}
+.dash-menu .options{
+    margin: 30px 0 10px 0 ;
+}
+.dash-menu .options a:hover{
+    color: rgb(163, 230, 202);
+}
+.dash-menu .options i{
+    padding: 0 7px;
+}
+.dash-menu .options a{
+    /* display: block; */
+    padding: 20px 10px;
+    color: rgb(255, 255, 255);
+}
+/* NARRATIVE */
+.aa .narrative-content {
+    display: flex;
+    font-size: 15px;
+}
+.aa .narrative-content .long-input input{
+    width: 180px;
+}
+.aa .narrative-content .narrative-input{
+    padding: 16px 16px;
+}
+.narrative-details{
+    padding: 0 180px 0 20px;
+}

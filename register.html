@@ -1,0 +1,58 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Register</title>
+</head>
+<style>
+
+select.input-group{
+    border: 2px solid #e7e7e7;
+    padding: 1px 15px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+    color: gray;
+	cursor: pointer;
+}
+
+</style>
+<body>
+	<div class="wrap-container-register">
+	<div class="container">
+		<form action="" method="POST" class="login-email">
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+			<div class="input-group">
+				<input type="text" placeholder="Username" name="username" value="" required>
+			</div>
+			<select class="input-group" name="User type" id="">
+			    <option value="hide" class="type placeholder">User Type</option>
+				<option value="Resident" class="type">Resident</option>
+				<option value="Investigator" class="type">Investigator</option>
+				<option value="Secretary" class="type">Secretary</option >
+            </select>
+			<div class="input-group">
+				<input type="password" placeholder="Password" name="password" value="" required>
+            </div>
+            <div class="input-group">
+				<input type="password" placeholder="Confirm Password" name="cpassword" value="" required>
+			</div>
+			<div class="input-group">
+				<button name="submit" class="btn">Submit</button>
+			</div>
+			<p class="login-register-text">Have an account? <a href="login.html">Login Here</a>.</p>
+		</form>
+	</div>
+	</div>
+	
+</body>
+</html>

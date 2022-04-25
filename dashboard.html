@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/side-and-top-bar.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!-- <link rel="stylesheet" href="../bcms-updated/css/"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6dd37d210c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side-bar">
+            <!-- logo image -->
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="">
+                <h3>Hello! Administrator</h3>
+            </div>
+            <!-- menu item -->
+            <div class="menu">
+                <div class="item"><a href="dashboard.html"><i class="fas fa-desktop"></i>Dashboard</a></div>
+                <div class="item">
+
+                    <div class="menu-option">
+                        <a  href="blotter-records.html" class="sub-btn"><i class=" fas fa-chalkboard-teacher"></i>Blotter Records</a>
+                        <i class="fas fa-caret-down dropdown"></i>
+                    </div>
+                    <!-- <a  href="blotter-records.html" class="sub-btn"><i class=" fas fa-chalkboard-teacher"></i>Blotter Records<i class="fas fa-caret-down dropdown icon"></i></a> -->
+                    
+                    <div class="sub-menu">
+                        <a href="complainant-data.html" class="sub-item">Complainant's Data</a>
+                        <a href="respondent-data.html" class="sub-item">Respondent's Data</a>
+                        <a href="incident-report.html" class="sub-item">Incident Report</a>
+                        <a href="narrative.html" class="sub-item">Narrative of Incident</a>
+     
+                    </div>
+             </div>
+                <div class="item"><a href="settings.html"><i class="fas fa-users-cog"></i>Settings</a></div>
+                <div class="item"><a href="login.html"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
+            </div> 
+
+        </div>
+        <!-- top menu bar -->
+        <div class="section">
+            <div class="top-navbar">
+                <div class="hamburger">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+                <h1>COMPLAINT MANAGEMENT SYSTEM</h3>
+            </div>
+
+            <!-- content form -->
+            <div class="aa">
+                <div class="dash-logo">
+                    <img src="./images/logo.jpg" alt="">
+                    <div class="dash-brgy-place">
+                        <h2>Barangay, Bulihan</h2>
+                        <p>Silang, Cavite</p>
+                    </div>
+                </div>
+                <div class="section-dash">
+                    <div class="sec-one-dash">
+                        <h2>Peace and Order Member and Officials</h2>
+                    </div>
+                    <div class="sec-two-dash">
+                        <h2>Blotter and Records Summary</h2>
+                        <div class="record-summary-dash">
+                            <div class="first-record">
+                                <h2>Settled Cases</h2>
+                            </div>
+                            <div class="first-record">
+                                <h2>Scheduled Cases</h2>
+                            </div>
+                            <div class="first-record">
+                                <h2>Unsettled Cases</h2>
+                            </div>
+                            <div class="first-record">
+                                <h2>Unscheduled Cases</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            //jquery for toggle sub menus
+            $('.dropdown').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+    
+            });
+    
+            //jquery for expand and collapse the side bar
+            // $('.menu-btn').click(function(){
+            //     $('.side-bar').addClass('active');
+            // });
+    
+            // $('.close-btn').click(function(){
+            //     $('.side-bar').removeClass('active');
+            // });
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function(){
+                document.querySelector("body").classList.toggle("active");
+
+            });
+        });
+    
+        </script> -->
+
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function(){
+                document.querySelector("body").classList.toggle("active");
+
+            });
+            const subMenu = document.querySelector('.sub-menu');
+            const menuOption = document.querySelector('.fa-caret-down');
+
+            menuOption.onclick = () => {
+                subMenu.classList.toggle('active');
+            }
+        </script>
+</body>
+</html>

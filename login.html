@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6dd37d210c.js" crossorigin="anonymous"></script>
+	<title>Login</title>
+</head>
+<style>
+     .wrap-container{
+        background-image: url('images/background.png'); 
+    }
+
+   .title h1.title-text{
+       font-size: 60px;
+       /* text-shadow: 2px 2px #008037; */
+       text-shadow: 2px 3px black;
+        position: relative;
+        left: -13%;
+        color: #ffff;
+        /* display: flex;
+        justify-content: end;
+        align-items: start; */
+
+
+    }
+    .title span.title-text.two{
+        color: #008037;
+       
+    } 
+</style>
+
+<body >
+    <div class="wrap-container" >
+        
+        <a href="login.html" class="home"><img class="logo" src="images/logo.png"></a>
+        <div class="title">
+        <h1 class="title-text">Complaint <br>Management <span class="title-text two">System</span></h1>
+       
+        </div>
+        <div class="container login">
+        <i class="fa-solid fa-circle-user "></i>
+            <form action="" method="POST" class="login-email">
+                <div class="input-group">
+                    <input type="email" placeholder="Username" name="username" value="" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" name="password" value="" required>
+                </div>
+                <select class="input-group" name="User type" id="">
+                    <option value="hide" class="type placeholder">User Type</option>
+                    <option value="Resident" class="type">Resident</option>
+                    <option value="Investigator" class="type">Investigator</option>
+                    <option value="Secretary" class="type">Secretary</option >
+                </select>
+                <div class="input-group">
+                    <button name="submit" class="btn">Login <a href=""></a></button>
+                </div>
+                <p class="login-register-text">Don't have an account? <a href="register.html">Register Here</a>.</p>
+            </form>
+        </div>
+    </div>
+	
+</body>
+</html>
